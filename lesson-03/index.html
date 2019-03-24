@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<a href="/">back</a><br> <a href="div.html">GO></a>
+
+<style>
+    p {
+        color: red;
+    }
+
+    span {
+        color: black;
+    }
+
+    .container .symbol { /*ВЛОЖЕНОСТЬ ЧЕРЕЗ ПРОБЕЛ*/
+        color: #33d42f;
+    }
+
+    a.link { /*УТОЧНЕНИЕ*/
+        color: #b61ba4;
+    }
+</style>
+
+<p>
+    Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. A alias aliquam asperiores deleniti dolor
+    doloremque
+    eligendi nemo nobis numquam pariatur quia quisquam repellat, reprehenderit sapiente sed ullam voluptate. Quasi,
+    recusandae, rerum.
+</p>
+
+<p class="container">
+    <span class="symbol">A</span>
+</p>
+<span class="symbol">B</span><br>
+<span class="symbol">C</span><br>
+
+<a href="/" class="link">LINK A</a>
+<span class="link">LINK A</span>
+<span class="link">LINK A</span><br>
+
+<style>
+    .text, .link-text, a.link { /*ГРУППИРОВКА через запятую*/
+        color: #d42e9d;
+    }
+</style>
+
+<span class="text">Lorem ipsum dolor</span>
+<a class="link-text"> Lorem ipsum dolor</a>
+<a class="link-text"> Lorem ipsum dolor</a>
+</body>
+</html>
