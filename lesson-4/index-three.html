@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index-three</title>
+</head>
+<body>
+<a href="index-two.html">back</a><br>
+
+<style>
+    div {
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+    }
+
+    .box1 {
+        background-color: red;
+        top: 50px;
+        left: 100px;
+        z-index: 2;
+    }
+    .box2 {
+        background-color: #34b610;
+        z-index: 1;
+    }
+
+    ul, li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    li:after {
+        content: '/';
+        color: red;
+    }
+
+    li:before {
+        content: '\00A9 ';
+        color: red;
+    }
+</style>
+<ul>
+    <li>Главная</li>
+    <li>Конфликты</li>
+    <li>Портфолио</li>
+</ul>
+&#169
+<div class ="box1"></div>
+<div class ="box2"></div>
+
+<style>
+    .comment {
+        width: 400px;
+        height: 300px;
+        border: 1px solid black;
+        position: relative;
+    }
+
+    .comment:after {
+        content: '';
+        display: block;
+        background: url("image/arrow.png") no-repeat 0 0 white;
+        width: 30px;
+        height: 16px;
+        position: absolute;
+        bottom: -16px;
+        left: calc(50% - 15px);
+    }
+</style>
+
+<div class="comment"></div>
+</body>
+</html>
