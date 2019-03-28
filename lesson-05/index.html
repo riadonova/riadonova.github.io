@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<a href="/">back</a>
+
+<style>
+    .textfield {
+        padding: 5px 7px;
+        border: 1px solid red;
+        border-radius: 4px;
+        outline: none;
+    }
+
+    .textfield:focus {
+        box-shadow: 0 0 10px red;
+    }
+
+    .no-resize {
+        resize: none;
+    }
+
+    .textfield.no-resize {
+        width: 200px;
+        height: 100px;
+    }
+
+    .button {
+        cursor: pointer;
+    }
+
+    .gender {
+        display: none;
+    }
+
+    .gender + span {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url("image/radio_button_1.png") 0 0 no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .gender:checked + span {
+        background: url("image/radio_button_2.png") 0 0 no-repeat;
+        background-size: cover;
+    }
+
+    .box {
+        width: 300px;
+        height: 300px;
+        background-color: #ff4933;
+    }
+
+    .box-2 {
+        width: 100px;
+        height: 100px;
+        background-color: #fffb17;
+    }
+
+    .box:hover .box-2 {
+        background-color: #1cff11;
+    }
+
+</style>
+
+<form action="" method="GET" enctype="">
+    <label for="name">ИМЯ:</label>
+    <input type="text" id="name" class="textfield">
+
+    <br>
+    <br>
+
+    <label>
+        ФАМИЛИЯ:
+        <input type="text" class="textfield">
+    </label>
+
+    <br>
+    <br>
+
+    <label>
+        М
+        <input type="radio" name="gender" class="gender">
+        <span></span>
+    </label>
+    <label>
+        Ж
+        <input checked type="radio" name="gender" class="gender">
+        <span></span>
+    </label>
+
+
+    <p>
+        Ваши навыки:
+        <br>
+        <label>
+            HTML
+            <input type="checkbox">
+        </label>
+        <label>CSS
+            <input type="checkbox">
+        </label>
+        <label>JavaScript
+            <input type="checkbox">
+        </label>
+    </p>
+
+    <label>
+        Пароль:
+        <input type="password" class="textfield" placeholder="Буквы и цифры">
+    </label>
+
+    <p>
+        <label>
+            Комментарий:
+            <br>
+            <textarea class="textfield no-resize"></textarea>
+        </label>
+    </p>
+
+    <p>
+        <label for="drinks">Какие напитки Вы пьёте?</label>
+        <br>
+        <select id="drinks">
+            <option>Чай</option>
+            <option disabled>Кофе</option>
+            <option selected>Сок</option>
+        </select>
+    </p>
+
+    <input class="button" type="submit" value="ОТПРАВИТЬ">
+    <button class="button" type="submit">ОТПРАВИТЬ</button>
+    <!--<button type="submit"<img src="" alt=""></button>>-->
+</form>
+<br>
+<button>КНОПКА ВНЕ ФОРМЫ</button>
+
+<div class="box">
+    <div class="box-2"></div>
+</div>
+</body>
+</html>
