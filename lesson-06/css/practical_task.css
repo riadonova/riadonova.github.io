@@ -23,8 +23,16 @@ div {
         display: block;
     }
 
+    nav {
+        width: 40px;
+    }
+
     div {
         display: none;
+    }
+
+    nav:focus {
+        width: 100%;
     }
 
     nav:focus div {
