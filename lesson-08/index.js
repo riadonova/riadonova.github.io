@@ -132,6 +132,7 @@ for (var i = 0; i < arr23.length; i++) {
         surname: 'Ivanov',
         age: 20
     };
+}
 
     var keys = Object.keys(user);
     for (var i = 0; i < keys.length; i++) {
@@ -146,18 +147,20 @@ for (var i = 0; i < arr23.length; i++) {
         surname: 'Sidorov',
         age: 30
     };
-}
+
     for (var k in user2) {
         //k = name, surname, age
         console.log( user2[k]);
     }
 
+    Array.prototype.babam = function() {
+        console.log('babam');
+    };
     var arr24 = [1,2,3,4,5];
-    arr24.test = 'Hello';
 
-
-    for (var k in arr24) { // не использовать for in для массивов
-        console.log (arr24[k]);
+    for (var k in arr24) { // not use without hasOwnProperty
+        if(arr24.hasOwnProperty(k)) {
+            console.log(arr24[k]);
+        }
     }
 
-    
