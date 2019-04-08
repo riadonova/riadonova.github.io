@@ -52,9 +52,9 @@ class Student {
 const vika = new Student('Vika', 'Spiridonova', 23, WOMAN, 'brown');
 const sasha = new Student('Sasha', 'Vovchuk', 35, MAN, 'green');
 const sheldon = new Student('Sheldon', 'Cuper', 9, MAN, 'blue');
-const emmy = new Student('Emmy', 'Fara Fauler', 29, WOMAN, 'blue')
+const emmy = new Student('Emmy', 'Fara Fauler', 29, WOMAN, 'blue');
 
-const group = [vika, sasha, sheldon];
+const group = [vika, sasha, sheldon, emmy];
 
 const cources = [
     [vika, sasha],
@@ -66,7 +66,15 @@ cources[0][2] = sheldon;  // sheldon add to first group
 cources [1][0] = vika; // vika change sasha one second group
 
 
+for (var i = 0; i < 10; i++){
+    group.push(new Student('name'+i, 'lastName'+i, i, MAN, 'black'));
+}
 
+for ( var i=0; i<group.length; i++){
+    var student = group[i];
+   console.log(student.name.first + ' ' + student.name.last);
+   // console.log(i);
+}
 
 
 
