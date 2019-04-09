@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.site {
+    position: relative;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search {
+    float: right;
+    margin-top: 30px;
+}
+
+#search {
+    color: #b7b5ac;
+    width: 300px;
+}
+
+.container {
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #0072bc;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.list ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 2px;
+    background-color: #b7b7b7;
+}
