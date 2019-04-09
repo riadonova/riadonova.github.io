@@ -1,0 +1,21 @@
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.row {
+    display: flex;
+}
+
+.land {
+    background-color: #33d42f;
+}
+
+.water {
+    background-color: #0073ff;
+}
+
+.sands {
+    background-color: #d5ab40;
+}
