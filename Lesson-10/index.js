@@ -36,7 +36,7 @@ console.log('now2 =', now2);
 function getDateBefore(daysNum) {
     var dayMS = 1000 * 60 * 60 * 24; // 1 сутки
     var daysNumMs = daysNum * dayMS; // мс в 140 днях
-    var dt = new Date(Date.now() - daysNumMS);
+    var dt = new Date(Date.now() - daysNum);
     console.log('dt =', dt);
     var months = [
         'january',
@@ -55,7 +55,7 @@ function getDateBefore(daysNum) {
     console.log('месяц =', months[dt.getMonth()]);
 }
 
-// getDateBefore(140);
+ getDateBefore(140);
 
 moment.locale('ru');
 console.log(moment().format('DD MMMM YYYY'));
