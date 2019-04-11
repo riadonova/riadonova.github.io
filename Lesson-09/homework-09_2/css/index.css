@@ -1,0 +1,23 @@
+body {
+    background-image: url("../img/iron.jpg");
+    background-size: cover;
+}
+
+.header {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.img {
+    background-image: url("../img/bomb.png");
+    width: 761px;
+    height: 273px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
