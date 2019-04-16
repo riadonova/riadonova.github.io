@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="clock"></h1>
+<h1 id="timer">00:00</h1>
+<button onclick="startTimer()">START</button>
+<button onclick="stopTimer()">STOP</button>
+<h1 id="countdown"></h1>
+<button onclick="stopCountdown()">STOP COUNTDOWN</button>
+<script>
+    setTimeout (function () {
+        console.log(1)
+    }, 2000);
+
+    setInterval(function () {
+        console.log(2)
+    },1000);
+
+
+    function format(num) {
+        if (num.length > 1) {
+            return num;
+        }
+        else {
+            return '0' + num;
+        }
+    }
+    var clock = document.getElementById('clock');
+    setInterval(function () {
+        var now = new Date();
+        clock.textContent = format(now.getHours().toString()) + ':' + format(now.getMinutes().toString()) + ':' + format(now.getSeconds().toString())
+    }, 1000);
+
+var timerId;
+    function startTimer() {
+        var timer = document.getElementById('timer');
+        var start = new Date().getTime();
+        timerId = setInterval(function () {
+            var timestamp = new Date().getTime() - start;
+            var tempDate = new Date(timestamp);
+            timer.textContent = format(tempDate.getMinutes().toString())+ ':' +  format(tempDate.getSeconds().toString());
+        },1000);
+    }
+
+    function stopTimer() {
+       clearInterval(timerId);
+    }
+
+var counterdown = 10;
+var countdown = document.getElementById('countdown')
+var countdownId = setInterval (function () {
+    if (counterdown < 0) {
+        countdown.textContent = 'Bang';
+        clearInterval(countdownId)
+    } else {
+    countdown.textContent = counterdown;
+    counterdown = counterdown -1;
+    }
+},1000);
+
+
+function stopCountdown() {
+    clearInterval(countdownId)
+    countdown.textContent = 'Hey-hey!';
+}
+
+</script>
+</body>
+</html>
