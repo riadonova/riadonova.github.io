@@ -3,14 +3,35 @@ body {
     background-size: cover;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .header {
     text-align: center;
+    font-family: 'Russo One', sans-serif;
     color: white;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 150px;
     margin: 0;
+    color: #989592;
+    letter-spacing: 8px;
+    text-shadow: 5px 5px #010805, -5px -2px #e4f4e0;
+}
+
+.header p {
+    font-size: 30px;
+    color: #e4f4e0;
+    text-shadow: 5px 5px #020807;
+}
+
+.bomb {
+    position: relative;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .img {
@@ -20,4 +41,114 @@ h1 {
     margin-right: auto;
     margin-left: auto;
 }
+
+.timer {
+    position: absolute;
+    width: 240px;
+    height: 53px;
+    right: 283px;
+    top: 16px;
+    border-radius: 5px;
+    background-color: #290004;
+}
+
+#timer {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 27px;
+    text-align: center;
+    line-height: 50px;
+    color: #d40106;
+    text-shadow: 0 0 20px #d40106;
+}
+
+.keyboard {
+    display: inline-block;
+    position: absolute;
+    width: 240px;
+    right: 283px;
+    top: 70px;
+    margin-top: 2px;
+    background-color: black;
+}
+
+.keyboard div {
+    display: inline-block;
+    width: 57px;
+    height: 41px;
+    margin-bottom: 3px;
+    background-color: grey;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    border-radius: 3px;
+    line-height: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.5), 1px 1px 5px rgba(0, 0, 0, 1);
+}
+
+.keyboard div:active, #buttonStart:active {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), 1px 1px 5px rgba(0, 0, 0, 1);
+}
+
+.password {
+    position: absolute;
+    width: 241px;
+    height: 53px;
+    right: 283px;
+    top: 205px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: #081108;
+}
+
+#password {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 27px;
+    text-align: left;
+    line-height: 50px;
+    color: #43d434;
+    text-shadow: 0 0 20px #43d434;
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+}
+
+@keyframes flash {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: visible;
+    }
+}
+
+
+#buttonStart {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #808080;
+    border-radius: 2px;
+    box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.5), 1px 1px 5px rgba(0, 0, 0, 1);
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+#generator {
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+    margin-top: 30px;
+    background-color: #808080;
+}
+
 
