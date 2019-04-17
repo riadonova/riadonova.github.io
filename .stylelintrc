@@ -5,6 +5,8 @@
     ],
     "rules": {
         "indentation": 4,
+        "no-eol-whitespace": null,
+        "no-empty-source": null,
         "order/properties-order":
         [
             "position",
@@ -15,6 +17,7 @@
             "float",
             "clear",
             "display",
+            "flex-wrap",
             "visibility",
             "margin",
             "margin-top",
