@@ -17,12 +17,24 @@
             <button class="btn btn-start">START</button>
         </div>
         <div class="question">
-            <div class="timer"></div>
-            <p class="question-text"></p>
-            <input class="answer" type="text">
+            <form id="answer-form" >
+                <div class="timer"></div>
+                <p class="question-text"></p>
+                <div class="btn-question">
+                    <div>
+                        <input class="answer" autofocus required type="text">
+                    </div>
+                    <button type="submit" class="btn btn-ans">Ответ</button>
+                    <button type="button" class="btn btn-skip">Пропуск</button>
+                </div>
+                <div class="correct-answer"></div>
+            </form>
+        </div>
+        <div class="total-block">
+            <div class="total-text"></div>
+            <button class="btn btn-re">Повторить</button>
         </div>
     </div>
-</div>
 </div>
 <script src="js/main.js"></script>
 </body>
