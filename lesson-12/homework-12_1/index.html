@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrap" id="box">
+
+    <ul class="tabs" id="tabs">
+        <li class="tab active" data-tab="1">ТАБ 1</li>
+        <li class="tab" data-tab="2">ТАБ 2</li>
+    </ul>
+
+    <div class="text active" data-text="1">
+        ТЕКСТ 1
+    </div>
+    <div class="text" data-text="2">
+        ТЕКСТ 2
+    </div>
+</div>
+
+<form id="add-tab">
+    <div>
+        <textarea id="tabText"></textarea>
+    </div>
+    <button type="submit" id="addTab">ДОБАВИТЬ ТАБ</button>
+</form>
+
+<script src="js/index.js"></script>
+</body>
+</html>
