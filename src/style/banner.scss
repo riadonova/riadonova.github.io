@@ -1,0 +1,19 @@
+.banner {
+  padding-top: 55px;
+  background-color: $primary;
+  @include media-breakpoint-down(md) {
+    background-image:  url('../../img/picture.svg');
+    background-size: cover;
+  }
+  .container {
+    background-image: url('../../img/picture.svg');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    @include media-breakpoint-down(md) {
+      background-image: none;
+    }
+  }
+}
