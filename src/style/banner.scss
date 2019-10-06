@@ -1,8 +1,12 @@
 .banner {
-  padding-top: 55px;
   background-color: $primary;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     background-image:  url('../../img/picture.svg');
+    background-size: contain;
+    background-position: 260px center;
+    background-repeat: no-repeat;
+  }
+  @include media-breakpoint-down(md) {
     background-size: cover;
   }
   .container {
@@ -12,7 +16,7 @@
     background-repeat: no-repeat;
     padding-top: 180px;
     padding-bottom: 180px;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       background-image: none;
     }
   }

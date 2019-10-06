@@ -1,7 +1,11 @@
-.about {
-  margin-top: 50px;
-}
-
 .photo {
   width: 100%;
+}
+
+.text-about {
+  font-size: 20px;
+  line-height: 1.5;
+  @include media-breakpoint-down('lg') {
+    font-size: 15px;
+  }
 }

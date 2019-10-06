@@ -8,4 +8,11 @@
     margin-left: -$navbar-nav-link-padding-x;
     margin-right: -$navbar-nav-link-padding-x;
   }
+  @include media-breakpoint-down('sm') {
+    .navbar-nav {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 }
+
