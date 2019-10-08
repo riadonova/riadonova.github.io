@@ -3,11 +3,12 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import "variables";
 @import "~bootstrap/scss/bootstrap";
-@import "carousel";
 @import "navbar";
 @import "banner";
 @import "resume";
 @import "contacts";
+@import "portfolio";
 
-
-
+button:focus {
+  outline-color: $purple;
+}

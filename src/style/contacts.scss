@@ -1,4 +1,6 @@
 .icon-contact {
+  display: inline-block;
+  padding: 4px 8px;
   border-radius: 2px;
   i {
     font-size: 20px;
@@ -11,4 +13,8 @@
 
 .lin {
   background-color: #0077B5;
+}
+
+.date {
+  padding-top: 30px;
 }

@@ -62,7 +62,7 @@ module.exports = {
 					}
 				]
 			},
-			{ test: /\.(svg|png|eot|ttf|woff|woff2)$/, use: ['file-loader'] }
+			{ test: /\.(svg|png|eot|ttf|woff|woff2|jpg)$/, use: ['file-loader'] }
 		]
 	},
 

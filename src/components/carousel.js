@@ -4,7 +4,7 @@ $('#carousel-example').on('slide.bs.carousel', function (e) {
     */
     const $e = $(e.relatedTarget);
     const idx = $e.index();
-    let itemsPerSlide = 5;
+    let itemsPerSlide = 4;
     const carouselItem = $('.carousel-item');
     const totalItems =carouselItem.length;
 
