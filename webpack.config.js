@@ -67,7 +67,8 @@ module.exports = {
 				test: /\.(svg|png|eot|ttf|woff|woff2|jpg)$/,
 				loader: 'file-loader',
 				options: {
-					name: '[path][name].[ext]',
+					outputPath: 'assets',
+					//name: '[path][name].[ext]',
 				},
 			}
 		]
