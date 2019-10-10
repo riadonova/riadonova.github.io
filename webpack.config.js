@@ -63,12 +63,18 @@ module.exports = {
 					}
 				]
 			},
-			{ test: /\.(svg|png|eot|ttf|woff|woff2|jpg)$/, use: ['file-loader'] }
+			{
+				test: /\.(svg|png|eot|ttf|woff|woff2|jpg)$/,
+				loader: 'file-loader',
+				options: {
+					name: '[path][name].[ext]',
+				},
+			}
 		]
 	},
 
 	output: {
-		path: __dirname + "/docs",
+		path: __dirname + "/",
 		chunkFilename: '[name].[chunkhash].js',
 		filename: '[name].js'
 	},
@@ -91,8 +97,8 @@ module.exports = {
 		}
 	},
 	plugins: [
-		new HtmlWebpackPlugin({template: "index.html"}),
-		new CleanWebpackPlugin(),
+		new HtmlWebpackPlugin({template: "src/index.html"}),
+		//new CleanWebpackPlugin(),
 		new UglifyJSPlugin()
 	]
 };

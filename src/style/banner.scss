@@ -1,7 +1,7 @@
 .banner {
   background-color: $primary;
   @include media-breakpoint-down(lg) {
-    background-image:  url('../../img/picture.svg');
+    background-image:  url('../img/picture.svg');
     background-size: contain;
     background-position: 260px center;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
     background-size: cover;
   }
   .container {
-    background-image: url('../../img/picture.svg');
+    background-image: url('../img/picture.svg');
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
